@@ -4,7 +4,8 @@
   "description": "A full-stack AI-powered job preparation platform that streamlines the entire candidate journey  from authentication and resume parsing to personalized interview preparation. Built with React, Node.js, JWT, Gemini AI, and Puppeteer, it delivers intelligent insights, automated workflows, and realistic interview simulations.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,12 @@
   },
   "homepage": "https://github.com/ShrishtiSingh26/PrepStack#readme",
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.6.1"
   }
 }
