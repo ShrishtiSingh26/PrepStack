@@ -15,6 +15,7 @@ export const useAuth = () => {
         try {
             const data = await login({ email, password })
             setUser(data.user)
+            localStorage.setItem("prepstack_logged_in", "true")
             return { success: true }
         } catch (err) {
             const message = err.response?.data?.message || "Invalid email or password."

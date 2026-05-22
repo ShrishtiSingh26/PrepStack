@@ -17,7 +17,7 @@ const Login = () => {
         setError("")
         const res = await handleLogin({email,password})
         if (res.success) {
-            navigate('/')
+            navigate('/home')
         } else {
             setError(res.message)
         }

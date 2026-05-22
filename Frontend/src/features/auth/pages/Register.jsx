@@ -17,7 +17,7 @@ const Register = () => {
         setError("")
         const res = await handleRegister({username,email,password})
         if (res.success) {
-            navigate("/")
+            navigate("/home")
         } else {
             setError(res.message)
         }

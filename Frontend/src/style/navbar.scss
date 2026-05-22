@@ -1,0 +1,110 @@
+$bg-navbar:     rgba(22, 27, 34, 0.8);
+$border-color:  #2a3348;
+$text-primary:  #e6edf3;
+$text-muted:    #7d8590;
+$accent:        #e1034d;
+
+.main-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: $bg-navbar;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid $border-color;
+    padding-block: 0.75rem;
+
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-inline: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: $text-primary;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+
+        .logo-icon {
+            color: $accent;
+        }
+
+        .highlight {
+            color: $accent;
+        }
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .nav-link {
+        color: $text-muted;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: color 0.2s;
+
+        &:hover {
+            color: $text-primary;
+        }
+
+        &.dashboard-link {
+            color: $text-primary;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 2px;
+
+            &:hover {
+                border-bottom-color: $accent;
+            }
+        }
+    }
+
+    .user-welcome {
+        font-size: 0.9rem;
+        color: $text-muted;
+
+        strong {
+            color: $text-primary;
+        }
+    }
+
+    .logout-btn {
+        background-color: transparent;
+        border: 1px solid $border-color;
+        color: $text-primary;
+        padding-inline: 1rem;
+        padding-block: 0.4rem;
+        border-radius: 0.5rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s, border-color 0.2s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: $text-muted;
+        }
+    }
+
+    .register-btn {
+        padding-inline: 1.25rem;
+        padding-block: 0.5rem;
+        border-radius: 0.5rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-block;
+    }
+}
