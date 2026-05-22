@@ -11,7 +11,7 @@ https://prep-stack-frontend-nu.vercel.app/
 ---
 ## Demo Video
 ---
-<video src="images/PrepstackDemo.mp4" controls width="700"></video>
+<video controls src="Prepstack Demo-1.mp4" title="Title"></video>
 ---
 
 ## Key Features
