@@ -5,6 +5,14 @@
 PrepStack is a full-stack web application designed to help candidates prepare for interviews by dissecting job descriptions, parsing resumes or self-profiles, and generating tailored roadmap strategies. Powered by Gemini AI, it generates custom technical and behavioral question banks, a day-by-day study roadmap, and even compiles a tailored resume PDF.
 
 ---
+## Live Website
+---
+https://prep-stack-frontend-nu.vercel.app/
+---
+## Demo Video
+---
+
+---
 
 ## Key Features
 
