@@ -11,7 +11,7 @@ https://prep-stack-frontend-nu.vercel.app/
 ---
 ## Demo Video
 
-[Watch Video Demo](images/PrepstackDemo.mp4)
+[Watch Video Demo](https://drive.google.com/file/d/1zbyldCIlPvoRdAVBsfrjWAzmUAaWUAH9/view?usp=sharing)
 
 ## Key Features
 
