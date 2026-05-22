@@ -15,8 +15,10 @@ export const useAuth = () => {
         try {
             const data = await login({ email, password })
             setUser(data.user)
+            return { success: true }
         } catch (err) {
-
+            const message = err.response?.data?.message || "Invalid email or password."
+            return { success: false, message }
         } finally {
             setLoading(false)
         }
@@ -27,8 +29,11 @@ export const useAuth = () => {
         try {
             const data = await register({ username, email, password })
             setUser(data.user)
+            localStorage.setItem("prepstack_logged_in", "true")
+            return { success: true }
         } catch (err) {
-
+            const message = err.response?.data?.message || "Registration failed."
+            return { success: false, message }
         } finally {
             setLoading(false)
         }
@@ -37,10 +42,13 @@ export const useAuth = () => {
     const handleLogout = async () => {
         setLoading(true)
         try {
-            const data = await logout()
+            await logout()
             setUser(null)
+            localStorage.removeItem("prepstack_logged_in")
+            return { success: true }
         } catch (err) {
-
+            const message = err.response?.data?.message || "Logout failed."
+            return { success: false, message }
         } finally {
             setLoading(false)
         }
@@ -49,11 +57,20 @@ export const useAuth = () => {
     useEffect(() => {
 
         const getAndSetUser = async () => {
-            try {
+            const isLoggedIn = localStorage.getItem("prepstack_logged_in") === "true"
+            
+            if (!isLoggedIn) {
+                setLoading(false)
+                return
+            }
 
+            try {
                 const data = await getMe()
                 setUser(data.user)
-            } catch (err) { } finally {
+            } catch (err) {
+                setUser(null)
+                localStorage.removeItem("prepstack_logged_in")
+            } finally {
                 setLoading(false)
             }
         }
