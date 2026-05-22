@@ -50,41 +50,41 @@ graph TD
 ### Main Dashboard
 ---
 
-![Dashboard 1](images\dash1.png)
+![Dashboard 1](images/dash1.png)
 
-![Dashboard 2](images\dash2.png)
+![Dashboard 2](images/dash2.png)
 
-![Dashboard 3](images\dash3.png)
+![Dashboard 3](images/dash3.png)
 
 ---
 
 ### Register/Login
 ---
 
-![Register](images\login.png)
+![Register](images/login.png)
 
-![Login](images\register.png)
+![Login](images/register.png)
 
 ---
 
 ### Home Page
 ---
 
-![Home](images\home.png)
+![Home](images/home.png)
 
 ---
 
 ### Interview Page (Example)
 ---
 
-![Interview 1](images\int1.png)
+![Interview 1](images/int1.png)
 
-![Interview 2](images\int2.png)
+![Interview 2](images/int2.png)
 
 ---
 ### Tailored Resume (Example)
 ---
-![Demo](images\resume.png)
+![Demo](images/resume.png)
 
 ##  Setup & Installation
 
