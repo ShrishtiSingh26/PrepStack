@@ -10,9 +10,8 @@ PrepStack is a full-stack web application designed to help candidates prepare fo
 https://prep-stack-frontend-nu.vercel.app/
 ---
 ## Demo Video
----
-<video controls src="Prepstack Demo-1.mp4" title="Title"></video>
----
+
+[Watch Video Demo](images/PrepstackDemo.mp4)
 
 ## Key Features
 
