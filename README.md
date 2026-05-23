@@ -36,6 +36,16 @@ https://prep-stack-frontend-nu.vercel.app/
 
 ---
 
+##  Deployment
+
+*   **Frontend**: Vercel
+*   **Backend**: Render
+*   **Database**: MongoDB Atlas
+  
+  *Note: Due to deployment in free tier only, working of app can be slow.*
+
+---
+
 ##  User Workflow
 
 ```mermaid
